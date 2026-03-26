@@ -80,5 +80,6 @@ class TestUserManagement(unittest.TestCase):
             "list_users should return users sorted by email."
         )
 
+
 if __name__ == "__main__":
     unittest.main()
