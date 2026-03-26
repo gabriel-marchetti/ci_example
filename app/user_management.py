@@ -26,7 +26,7 @@ def get_user(user_id: int) -> Optional[Dict]:
 
 
 def list_users() -> List[Dict]:
-    return _db.list()
+    return sorted(_db.list(), key=lambda user: user["email"].lower())
 
 
 def delete_user(user_id: int) -> bool:
